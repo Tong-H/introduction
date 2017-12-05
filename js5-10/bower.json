@@ -1,0 +1,23 @@
+{
+  "name": "js5",
+  "authors": [
+    "Tong-1 <2518481825@qq.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "angular-ui-router": "^1.0.10",
+    "jquery-ui": "^1.12.1",
+    "ng-file-upload-shim": "^12.2.13"
+  }
+}

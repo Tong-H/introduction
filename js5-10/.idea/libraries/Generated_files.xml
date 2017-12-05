@@ -1,0 +1,111 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/js/router.min.min.js" />
+        <item url="file://$PROJECT_DIR$/js/router.min.js" />
+        <item url="file://$PROJECT_DIR$/bower_components/oclazyload/dist/ocLazyLoad.require.min.min.js" />
+        <item url="file://$PROJECT_DIR$/js/master/masterFactory.min.js" />
+        <item url="file://$PROJECT_DIR$/bower_components/oclazyload/dist/ocLazyLoad.min.min.js" />
+        <item url="file://$PROJECT_DIR$/js/plus/plus.min.js" />
+        <item url="file://$PROJECT_DIR$/js/master/master.min.js" />
+        <item url="file://$PROJECT_DIR$/js/master/masterPage.min.js" />
+        <item url="file://$PROJECT_DIR$/js/other/pathUrl.min.js" />
+        <item url="file://$PROJECT_DIR$/js/plus/plusFactory.min.js" />
+        <item url="file://$PROJECT_DIR$/bower_components/oclazyload/dist/ocLazyLoad.require.min.js" />
+        <item url="file://$PROJECT_DIR$/bower_components/oclazyload/dist/ocLazyLoad.min.js" />
+        <item url="file://$PROJECT_DIR$/js/other/filter.min.js" />
+        <item url="file://$PROJECT_DIR$/js/router.min.js" />
+        <item url="file://$PROJECT_DIR$/bower_components/oclazyload/dist/modules/ocLazyLoad.loaders.requireJSLoader.min.js" />
+        <item url="file://$PROJECT_DIR$/bower_components/oclazyload/dist/modules/ocLazyLoad.loaders.cssLoader.min.js" />
+        <item url="file://$PROJECT_DIR$/bower_components/oclazyload/dist/modules/ocLazyLoad.directive.min.js" />
+        <item url="file://$PROJECT_DIR$/bower_components/oclazyload/dist/modules/ocLazyLoad.loaders.core.min.js" />
+        <item url="file://$PROJECT_DIR$/bower_components/oclazyload/dist/modules/ocLazyLoad.polyfill.ie8.min.js" />
+        <item url="file://$PROJECT_DIR$/bower_components/oclazyload/dist/modules/ocLazyLoad.loaders.common.min.js" />
+        <item url="file://$PROJECT_DIR$/bower_components/oclazyload/dist/modules/ocLazyLoad.loaders.templatesLoader.min.js" />
+        <item url="file://$PROJECT_DIR$/bower_components/oclazyload/dist/modules/ocLazyLoad.core.min.js" />
+        <item url="file://$PROJECT_DIR$/bower_components/oclazyload/dist/modules/ocLazyLoad.loaders.jsLoader.min.js" />
+        <item url="file://$PROJECT_DIR$/js/login/login.min.js" />
+        <item url="file://$PROJECT_DIR$/js/other/random.min.js" />
+        <item url="file://$PROJECT_DIR$/bower_components/wangEditor/release/wangEditor.min.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/js/factory.min.js" />
+      <root url="file://$PROJECT_DIR$/js/factory.min.js" />
+      <root url="file://$PROJECT_DIR$/js/masterPage.min.js" />
+      <root url="file://$PROJECT_DIR$/js/plus.min.js" />
+      <root url="file://$PROJECT_DIR$/js/plusFactory.min.js" />
+      <root url="file://$PROJECT_DIR$/js/filter.min.js" />
+      <root url="file://$PROJECT_DIR$/js/js5-2.min.js" />
+      <root url="file://$PROJECT_DIR$/js/pathUrl.min.js" />
+      <root url="file://$PROJECT_DIR$/js/master.min.js" />
+      <root url="file://$PROJECT_DIR$/js/masterFactory.min.js" />
+      <root url="file://$PROJECT_DIR$/js/masterFactory.min.min.js" />
+      <root url="file://$PROJECT_DIR$/js/js5-2.min.js" />
+      <root url="file://$PROJECT_DIR$/js/pathUrl.min.js" />
+      <root url="file://$PROJECT_DIR$/js/masterFactory.min.js" />
+      <root url="file://$PROJECT_DIR$/js/masterFactory.min.min.js" />
+      <root url="file://$PROJECT_DIR$/js/masterPage.min.js" />
+      <root url="file://$PROJECT_DIR$/js/plus.min.js" />
+      <root url="file://$PROJECT_DIR$/js/plusFactory.min.js" />
+      <root url="file://$PROJECT_DIR$/js/filter.min.js" />
+      <root url="file://$PROJECT_DIR$/js/master.min.js" />
+      <root url="file://$PROJECT_DIR$/js/other/js-5.min.js" />
+      <root url="file://$PROJECT_DIR$/js/plus/plus.min.min.js" />
+      <root url="file://$PROJECT_DIR$/js/plus/plusFactory.min.min.js" />
+      <root url="file://$PROJECT_DIR$/js/other/js-5.min.js" />
+      <root url="file://$PROJECT_DIR$/js/master/master.min.min.js" />
+      <root url="file://$PROJECT_DIR$/js/master/masterFactory.min.min.min.js" />
+      <root url="file://$PROJECT_DIR$/js/master/masterPage.min.min.js" />
+      <root url="file://$PROJECT_DIR$/js/login/js-5.min.js" />
+      <root url="file://$PROJECT_DIR$/js/login/js-5.min.min.js" />
+      <root url="file://$PROJECT_DIR$/js/other/filter.min.min.js" />
+      <root url="file://$PROJECT_DIR$/js/other/pathUrl.min.min.js" />
+      <root url="file://$PROJECT_DIR$/js/master/masterFactory.min.min.js" />
+      <root url="file://$PROJECT_DIR$/js/plus/plus.min.min.js" />
+      <root url="file://$PROJECT_DIR$/js/plus/plusFactory.min.min.js" />
+      <root url="file://$PROJECT_DIR$/js/master/master.min.min.js" />
+      <root url="file://$PROJECT_DIR$/js/master/masterFactory.min.min.min.js" />
+      <root url="file://$PROJECT_DIR$/js/master/masterPage.min.min.js" />
+      <root url="file://$PROJECT_DIR$/js/login/js-5.min.js" />
+      <root url="file://$PROJECT_DIR$/js/login/js-5.min.min.js" />
+      <root url="file://$PROJECT_DIR$/js/other/filter.min.min.js" />
+      <root url="file://$PROJECT_DIR$/js/other/pathUrl.min.min.js" />
+      <root url="file://$PROJECT_DIR$/js/master/masterFactory.min.min.js" />
+      <root url="file://$PROJECT_DIR$/js/login/login.min.min.js" />
+      <root url="file://$PROJECT_DIR$/js/login/login.min.min.js" />
+      <root url="file://$PROJECT_DIR$/js/other/router.min.js" />
+      <root url="file://$PROJECT_DIR$/js/other/js5-2.min.min.js" />
+      <root url="file://$PROJECT_DIR$/js/router.min.min.js" />
+      <root url="file://$PROJECT_DIR$/js/other/router.min.js" />
+      <root url="file://$PROJECT_DIR$/js/router.min.min.js" />
+      <root url="file://$PROJECT_DIR$/js/router.min.js" />
+      <root url="file://$PROJECT_DIR$/js/master/masterFactory.min.js" />
+      <root url="file://$PROJECT_DIR$/bower_components/oclazyload/dist/ocLazyLoad.require.min.min.js" />
+      <root url="file://$PROJECT_DIR$/bower_components/oclazyload/dist/ocLazyLoad.min.min.js" />
+      <root url="file://$PROJECT_DIR$/js/plus/plus.min.js" />
+      <root url="file://$PROJECT_DIR$/js/master/master.min.js" />
+      <root url="file://$PROJECT_DIR$/js/master/masterPage.min.js" />
+      <root url="file://$PROJECT_DIR$/js/other/pathUrl.min.js" />
+      <root url="file://$PROJECT_DIR$/bower_components/oclazyload/dist/ocLazyLoad.require.min.js" />
+      <root url="file://$PROJECT_DIR$/js/plus/plusFactory.min.js" />
+      <root url="file://$PROJECT_DIR$/bower_components/oclazyload/dist/ocLazyLoad.min.js" />
+      <root url="file://$PROJECT_DIR$/js/other/filter.min.js" />
+      <root url="file://$PROJECT_DIR$/js/router.min.js" />
+      <root url="file://$PROJECT_DIR$/bower_components/oclazyload/dist/modules/ocLazyLoad.loaders.requireJSLoader.min.js" />
+      <root url="file://$PROJECT_DIR$/bower_components/oclazyload/dist/modules/ocLazyLoad.loaders.cssLoader.min.js" />
+      <root url="file://$PROJECT_DIR$/bower_components/oclazyload/dist/modules/ocLazyLoad.directive.min.js" />
+      <root url="file://$PROJECT_DIR$/bower_components/oclazyload/dist/modules/ocLazyLoad.loaders.core.min.js" />
+      <root url="file://$PROJECT_DIR$/bower_components/oclazyload/dist/modules/ocLazyLoad.polyfill.ie8.min.js" />
+      <root url="file://$PROJECT_DIR$/bower_components/oclazyload/dist/modules/ocLazyLoad.loaders.common.min.js" />
+      <root url="file://$PROJECT_DIR$/bower_components/oclazyload/dist/modules/ocLazyLoad.loaders.templatesLoader.min.js" />
+      <root url="file://$PROJECT_DIR$/bower_components/oclazyload/dist/modules/ocLazyLoad.core.min.js" />
+      <root url="file://$PROJECT_DIR$/bower_components/oclazyload/dist/modules/ocLazyLoad.loaders.jsLoader.min.js" />
+      <root url="file://$PROJECT_DIR$/js/login/login.min.js" />
+      <root url="file://$PROJECT_DIR$/js/other/random.min.js" />
+      <root url="file://$PROJECT_DIR$/bower_components/wangEditor/release/wangEditor.min.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,144 @@
+<script>
+
+    /*.....................*/
+    $(function() {
+        $("#time1").datepicker({
+            /* 区域化周名为中文 */
+            dayNamesMin : ["日", "一", "二", "三", "四", "五", "六"],
+            /* 每周从周一开始 */
+            firstDay : 1,
+            /* 区域化月名为中文习惯 */
+            monthNames : ["1", "2", "3", "4", "5", "6",
+                "7", "8", "9", "10", "11", "12"],
+            /* 月份显示在年后面 */
+            showMonthAfterYear : true,
+            /* 年份后缀字符 */
+            yearSuffix : ".",
+            /* 格式化中文日期
+             （因为月份中已经包含“月”字，所以这里省略） */
+            dateFormat : "yy/MM/dd"
+        });
+    });
+    $(function() {
+        $("#time2").datepicker({
+            /* 区域化周名为中文 */
+            dayNamesMin : ["日", "一", "二", "三", "四", "五", "六"],
+            /* 每周从周一开始 */
+            firstDay : 1,
+            /* 区域化月名为中文习惯 */
+            monthNames : ["1", "2", "3", "4", "5", "6",
+                "7", "8", "9", "10", "11", "12"],
+            /* 月份显示在年后面 */
+            showMonthAfterYear : true,
+            /* 年份后缀字符 */
+            yearSuffix : ".",
+            /* 格式化中文日期
+             （因为月份中已经包含“月”字，所以这里省略） */
+            dateFormat : "yy/MM/dd"
+        });
+    });
+</script>
+
+
+<div ui-view="" id="#navBar">
+<div class="main-1">
+    <span>超级管理员</span>
+    <span class="right-in">admin</span>
+    <a class="glyphicon glyphicon-off" href="../js5-1.html" style="z-index: 0"></a>
+</div>
+<div class="box1">
+    <div class="main-2 text-left">
+        <h5>更新时间</h5>
+        <input class="form-control" id="time1" type="text" placeholder="年/月/日" ng-model="vm.params.time1">
+        <span></span>
+        <input class="form-control" id="time2" type="text" placeholder="年/月/日" ng-model="vm.params.time2">
+        <h5>类型</h5>
+        <select class="form-control" ng-model="vm.timeType" ng-init="vm.timeType = vm.typeShow">
+            <option value="" ng-show="false">
+            <option value="4">全部
+            <option value="0">找职位
+            <option value="1">找首页
+            <option value="2">找精英
+            <option value="3">行业大图
+        </select>
+    </div>
+    <div class="main-2 text-left">
+        <h5>状&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;态</h5>
+        <select class="form-control status" ng-model="vm.timeStata" ng-init="vm.timeStata = vm.stataShow">
+            <option value="" ng-show="false">
+            <option value="4">全部
+            <option value="2">上线
+            <option value="1">草稿
+    </select>
+    </div>
+    <div class="text-right main-2">
+        <button class="btn btn-danger1" type="button" ng-click="vm.clear()">清除</button>
+        <button class="btn btn-danger2" type="button" ng-click="vm.search1()">搜索</button>
+    </div>
+</div>
+<div class="box1">
+    <div class="tbl">
+        <span class="pull-left">Article列表</span>
+        <button class="btn btn-danger3 pull-right" type="button" ng-click="vm.plus()" ui-sref="master.plus">新增</button>
+    </div>
+    <table class="table table-hover">
+        <thead>
+            <td>序号</td>
+            <td>图片</td>
+            <td>标题</td>
+            <td>类型</td>
+            <td>创建者</td>
+            <td>创建时间</td>
+            <td>修改时间</td>
+            <td>状态</td>
+            <td>操作</td>
+        </thead>
+        <tbody>
+            <tr class="list" ng-repeat="x in vm.list| orderBy:'updateAt':true">
+                <td>{{$index+1}}</td>
+                <td><img src="{{x.img}}"/></td>
+                <td>{{x.title}}</td>
+                <td>{{x.type | listType}}</td>
+                <td>{{x.author}}</td>
+                <td>{{x.createAt | date:'yyyy/MM/dd hh:mm'}}</td>
+                <td>{{x.updateAt | date:'yyyy/MM/dd hh:mm'}}</td>
+                <td class="list7">{{x.status | listStatus1}}</td>
+                <td>
+                    <a ng-click="vm.operate1(x.id,x.status,this)">{{x.status | listStatus2}}</a>
+                    <a ng-click="vm.operate3(x.id)">编辑</a>
+                    <a ng-click="vm.operate2(x.id,this)">删除</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="page">
+    <button class="btn btn-danger4" type="button" ng-click="vm.pagesClickS()">首页</button>
+    <nav>
+        <ul class="pagination ">
+            <li>
+                <a ng-click="vm.pagesClickSy()" aria-label="revious">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="pages" ng-repeat="x in vm.pageCycle" ng-click="vm.pagesClick(this)" ng-class="{true:'active',false:''}[vm.params.page == x]" >
+                <a>{{x}}</a>
+            </li>
+            <li>
+                <a ng-click="vm.pagesClickXy()" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <button class="btn btn-danger4" type="button" ng-click="vm.pagesClickM()">末页</button>
+    跳转到
+    <input class="form-control" type="text" ng-model="vm.pagesNum">
+        <button class="btn btn-danger4" type="button" ng-click="vm.pagesNumClick()">确定</button>
+    <div>
+        共<span ng-bind="vm.total"></span>条&nbsp;
+        每页显示<input class="form-control pagesNum" type="text" ng-model="vm.params.size" ng-keydown="vm.pageKed($event)">条&nbsp;
+        共<span ng-bind="vm.pages"></span>页
+    </div>
+</div>
+</div>

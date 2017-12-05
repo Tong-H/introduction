@@ -1,0 +1,123 @@
+<script>
+    var E = window.wangEditor;
+    var editor = new E('#editor');
+    // 或者 var editor = new E( document.getElementById('#editor') )
+    // 自定义菜单配置
+    editor.customConfig.menus = [
+        'head',  // 标题
+        'bold',  // 粗体
+        'italic',  // 斜体
+        'underline',  // 下划线
+        'strikeThrough',  // 删除线
+        'foreColor',  // 文字颜色
+        'backColor',  // 背景颜色
+        'link',  // 插入链接
+        'list',  // 列表
+        'justify',  // 对齐方式
+        'emoticon'  // 表情
+        /*
+         'quote',  // 引用
+         'image',  // 插入图片
+         'table',  // 表格
+         'video',  // 插入视频
+         'code',  // 插入代码
+         'undo',  // 撤销
+         'redo'  // 重复
+         */
+    ];
+    editor.create()
+</script>
+<div class="plus">
+    <div class="box1">
+        <form name="myForm" novalidate>
+            <div class="plus-main1"><strong>新增Article</strong></div>
+            <div class="plus-main2">
+                <span>标题名称</span>
+                <input class="form-control" type="text" ng-model="vm.item.title" ng-maxlength="20" name="title" required>
+
+                <p class="myform" ng-show="myForm.title.$error.maxlength"><strong>用户名不能超过二十个字符</strong></p>
+
+                <p class="myform" ng-show="myForm.title.$dirty && myForm.title.$error.required"><strong>用户名不能为空</strong>
+                </p>
+            </div>
+            <div class="plus-main3">
+                <span>类&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;型</span>
+                <select class="form-control" ng-model="vm.item.type" ng-init="vm.item.type = '4'"
+                        ng-click="vm.typeClick()">
+                    <option value="" ng-show="false">
+                    <option value="4">请选择
+                    <option value="0">找职位
+                    <option value="1">找首页
+                    <option value="2">找精英
+                    <option value="3">行业大图
+                </select>
+                <span></span>
+                <select class="form-control" ng-model="vm.item.industry" ng-init="vm.item.industry = '4'" ng-hide="vm.item.industryHide">
+                    <option value="" ng-show="false">
+                    <option value="4">请选择
+                    <option value="0">移动互联网
+                    <option value="1">电子商务
+                    <option value="2">企业服务
+                    <option value="3">020
+                </select>
+            </div>
+            <div class="plus-main4">
+                <span>说&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;明</span>
+                <!--<input type="text" class="form-control" ng-model="vm.content">-->
+                <div id="editor" style="display: inline-block;vertical-align:text-top;width: 84%;z-index: 5 !important;"></div>
+            </div>
+            <div class="plus-main5">
+                <span>跳转链接</span>
+                <input class="form-control" type="url" ng-model="vm.item.url" name="url" required>
+                <p class="myform" ng-show="myForm.url.$error.url"><strong>请输入正确链接</strong></p>
+                <p class="myform" ng-show="myForm.url.$dirty && myForm.url.$error.required"><strong>链接不能为空</strong></p>
+            </div>
+            <div class="plus-main6">
+                <span>配&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;图</span>
+                <label class="btn btn-danger2" for="upload">选择文件</label>
+
+                <form>
+                    <input id="upload" type="file" accept="image/*" onchange="img(this)"/>
+                </form>
+            </div>
+            <div class="plus-main7">
+                <div class="plus-main7-left"></div>
+                <div class="plus-main7-right">
+                    <span>配图预览</span>
+                    <img id="preview" src=""/>
+                    <table>
+                        <tr>
+                            <th>图片名</th>
+                            <th>文件大小</th>
+                            <th>进度</th>
+                            <th>操作</th>
+                            <th>操作</th>
+                        </tr>
+                        {{vm.progress}}
+                        <tr id="plusList" ng-style="vm.plusList">
+                            <td class="imgName"></td>
+                            <td class="imgSize"></td>
+                            <td>
+                                <progress value="" max="100">
+                                    <span id="objprogress"></span>%
+                                </progress>
+                            </td>
+                            <td>
+                                <div class="glyphicon glyphicon-ok" ng-hide="vm.ok"></div>
+                                <div class="glyphicon glyphicon-remove" ng-hide="vm.no"></div>
+                            </td>
+                            <td>
+                                <button class="btn btn-danger2" type="button" ng-click="vm.imgUpload()">上传</button>
+                                <button class="btn btn-danger2" type="button" ng-click="vm.imgDelete()">删除</button>
+                            </td>
+                        </tr>
+                    </table>
+                    <button class="btn btn-danger1" id="onlineEditor" type="button" ng-click="vm.online(2)">立即上线
+                    </button>
+                    <button class="btn btn-danger1" type="button" ng-click="vm.online(1)">存为草稿</button>
+                    <button class="btn btn-danger2 btnend" type="button" ng-click="vm.cancel()">取消</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

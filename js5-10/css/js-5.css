@@ -1,0 +1,56 @@
+*{margin: 0;}
+html{
+    font-size: 62.5%;
+}
+body{
+    height: 100vh;
+    background: url("../img/ff.jpg") no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+}
+.main{
+    position: fixed;
+    border: 0.9rem solid white;
+    width: 60%;
+    margin:5% 0 0 13%;
+    padding: 2rem;
+}
+p{
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+    margin-bottom: 2rem;
+}
+.box{
+    align-items:center;
+    background: #ffffff;
+    margin: 1.5rem 0;
+    padding: 1rem;
+}
+img{
+    margin: 0 1.2rem 0 1.2rem;
+    padding: 0.2rem 1.2rem 0.2rem 0;
+    border-right: 0.12rem solid #bababa;
+    vertical-align: bottom;
+}
+.number{
+    border:0;
+    font-size: 2rem;
+    color: #bababa;
+    outline:none;
+}
+.password{
+    border:0;
+    font-size: 2rem;
+    color: #bababa;
+    outline:none;
+}
+button{
+    width: 100%;
+    font-size: 2.5rem;
+    color: #ed1b24;
+    margin-top: 1rem;
+    background-color: white;
+    border: none;
+    padding: 1rem;
+}
