@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none; }
+
+html {
+  font-size: 62.5%;
+  background-color: #f0f0f0; }
+
+body {
+  min-width: 320px; }
+
+html {
+  background-color: #29bde0; }
+
+header {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.7rem;
+  color: #fff; }
+  header img {
+    height: 25px; }
+
+main {
+  text-align: center; }
+  main .box {
+    background-color: #ffedc5;
+    font-size: 1.7rem;
+    color: red;
+    height: 65vh;
+    margin: 30px 10%;
+    position: relative;
+    border: 8px solid #fff; }
+    main .box img {
+      height: 34vh;
+      padding-top: 13vh; }
+    main .box #box2 {
+      display: none; }
+    main .box #round1 {
+      font-size: 1.7rem;
+      color: #fbb435;
+      padding: 18px 25px;
+      background-color: #fff;
+      border-radius: 50%;
+      position: absolute;
+      top: -28px;
+      left: 50%;
+      transform: translate(-50%); }
+  main button {
+    background: none;
+    border: none;
+    outline: none;
+    background-color: #fbb435;
+    font-size: 1.7rem;
+    color: #fff;
+    padding: 15px 10px;
+    width: 80%; }
+
+/*# sourceMappingURL=task2-3.css.map */

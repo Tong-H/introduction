@@ -1,0 +1,117 @@
+@import "base.scss";
+main{
+  @include b($bg:$c2);
+    padding: $p2 $p1;
+  h2{
+    padding: $p2*2 0;
+    border-bottom: $bd;
+  }
+  h3{
+    padding: $p2 0;
+  }
+  .main-1{
+    a,span{
+      @include font($fc:#000);
+    }
+    .main-1-sy:hover,
+    .main-1-zy:hover{
+      color: $c1;
+    }
+  }
+  .main-2{
+    @include font($fc:#000);
+    padding: $p2*2 0;
+    margin: $p2*2 0;
+    border-top: $bd;
+    border-bottom: $bd;
+    a,span{
+      @include font($fc:#000);
+      padding: $p2/2;
+      white-space: nowrap;
+    }
+    a:hover{
+      @include b;
+      color: $c4;
+    }
+  }
+  .main-3{
+    @include flex;
+    margin-top: $p2*2;
+    &-box{
+      @include b($bg:$c4);
+      @include font($fs:1.2rem,$fc:#000);
+      width: 32%;
+      margin-top: $p2;
+      border: $bd;
+      position: relative;
+      &-avatar{
+        @include flex;
+        padding: 0 $p2;
+        margin: $p2 0;
+        &-font{
+          padding-left: $p2;
+         span{
+           word-break:break-all;
+         }
+        }
+      }
+      table, td, td {
+        border:$bd;
+        padding: $p2/2;
+      }
+      table{
+        border-collapse:collapse;
+        width: 100%;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        border-bottom: none;
+        word-break:break-all;
+        .td-2{
+          text-align: right;
+          border-right: none;
+          border-left: none;
+        }
+        .td-1{
+          text-align: left;
+          border-right: none;
+        }
+        .td-3{
+          border-right: none;
+        }
+        .td-4{
+          border-left: none;
+          text-align: center;
+        }
+        .td-5{
+          border-bottom: none;
+        }
+      }
+      &-hover{
+        position: absolute;
+        background-color: rgba(0,0,0,.5);
+        text-align: center;
+        top: 0;
+        height: 100%;
+        @include font($fc:$c4);
+        display: none;
+        &-1,&-2{
+          padding: $p2;
+        }
+      }
+    }
+    .main-3-box:hover .main-3-box-hover{
+      display: block;
+    }
+  }
+}
+@media (max-width: 904px) {
+  main {
+    .main-3{
+      display: block;
+      &-box{
+        width: 100%;
+      }
+    }
+  }
+}

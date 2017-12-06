@@ -1,0 +1,109 @@
+*{margin: 0;}
+html{font-size: 62.5%;}
+.flex{
+    display: flex;
+    align-items: center;
+}
+main{margin-bottom:8.5rem;}
+.header{padding: 1.1rem;
+    background:#5fc0cd;
+}
+.left{margin-left: 1rem;float: left;width: 0;}
+.home{text-align: center;
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+.background{
+    height:17rem;
+    background: url("background.png") no-repeat;
+    background-size: 100% 100%;
+}
+.avatar{
+    margin:0 3rem 0 2rem;
+}
+.name{
+    font-size: 1.9rem;
+    color: #ffffff;
+    position: relative;
+    bottom: 1.2rem;
+}
+.address{
+    font-size: 1.3rem;
+    color: #ffffff;
+    position: relative;
+    top: 1.5rem;
+    right: 9rem;
+}
+.years{
+    font-size: 1.5rem;
+    color: #ffffff;
+    position: relative;
+    bottom: .8rem;
+    left: 1.1rem;
+}
+
+.font1{font-size: 1.3rem;}
+
+.one{
+    height: 5rem;
+    border-bottom: .1rem solid #f1f3f4;
+}
+.one1{
+    font-size: 1.3rem;
+    color: #000000;
+    border-left:0.2rem solid #5fc0cd;
+    padding-left:1rem;
+    margin-left: 1rem;
+}
+
+.two{
+    height: 5rem;
+    border-bottom: .1rem solid #f1f3f4;
+    margin-left: 1.6rem;
+    padding-left: 1.3rem;
+}
+.two1{
+    border-right: .1rem solid #f1f3f4;
+    padding-right: .9rem;
+}
+.two2,.two1{margin:0 .9rem 0 .9rem;}
+
+.three1{
+    font-size: 1.3rem;
+    color: #999999;
+    border-right: .1rem solid #f1f3f4;
+    padding-right: .5rem;
+    margin-right: .9rem;
+}
+.money{color: red;}
+.six{ white-space:nowrap;}
+.six1{padding: 1.5rem;margin-left: 1.6rem;}
+.footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+}
+.footer2{
+    background:#5fc0cd;
+    color: #fff;
+}
+.footer1{
+    justify-content:center;
+    width: 50%;
+    border: 0.2rem solid #5fc0cd;
+    height: 4rem;
+    border-radius:0.8rem;
+    font-size: 1.7rem;
+    margin: 1rem 0.5rem 1rem 1rem;
+}
+.footer2{
+    justify-content:center;
+    width: 50%;
+    border: 0.2rem solid #5fc0cd;
+    height: 4rem;
+    border-radius:0.8rem;
+    margin: 1rem 1rem 1rem 0.5rem;
+    font-size: 1.7rem;
+}
+hr{border: .1rem solid #f1f3f4;margin-left: 1.6rem;}

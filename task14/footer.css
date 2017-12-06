@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none; }
+
+html {
+  font-size: 62.5%;
+  font-family: Microsoft YaHei; }
+
+body {
+  min-width: 320px; }
+
+button {
+  background: none;
+  border: none;
+  outline: none; }
+
+footer {
+  background-color: #26a26f;
+  padding: 10px 6%;
+  font-size: 1.4rem;
+  color: #fafafa; }
+  footer .footer-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start; }
+    footer .footer-1-left p {
+      padding-bottom: 30px; }
+    footer .footer-1-center-1 {
+      padding-bottom: 10px;
+      display: block; }
+    footer .footer-1-center a {
+      color: #fafafa; }
+    footer .footer-1-right {
+      text-align: center; }
+      footer .footer-1-right img {
+        width: 80%; }
+  footer .footer-2 {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.2rem;
+    color: #fafafa; }
+  @media (max-width: 768px) {
+    footer .footer-1 {
+      display: block;
+      text-align: center; }
+      footer .footer-1-left p {
+        padding-bottom: 10px; }
+      footer .footer-1-right > img {
+        width: 25%; } }
+
+/*# sourceMappingURL=footer.css.map */

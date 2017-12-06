@@ -1,0 +1,85 @@
+@import "base.scss";
+body{
+  background: $c4;
+}
+header{
+  background: $c1;
+  padding: $p1;
+  @include pf2;
+  .header-1{
+    @include icon;
+    width:17px;
+    height:14px;
+    background-position:-94px 0px;
+  }
+}
+main{
+  padding: $p1 * 2;
+  padding-top: $p1 * 5;
+  text-align: center;
+  .main-1{
+    @include flex;
+    padding: $p1*2 $p1;
+    @include bb($bg:$c2);
+    border: $b1;
+    &-font{
+      @include font($fc:$c5);
+    }
+    &-img{
+      background: url("img/1.png");
+      width: 12px;
+      height: 21px;
+    }
+  }
+  .main-2{
+    @include bb($bg:$c2);
+    margin-top: $p1*2;
+    border: $b1;
+    a{
+      display: block;
+    }
+    &-games1{
+      padding: $p1*1.5;
+      @include font($fc:$c3);
+      border-bottom: $b2;
+    }
+    &-games2{
+      width: 85%;
+      padding: $p1*2.5 0;
+      margin: $p1*2 auto;
+      @include font($fc:$c2);
+      @include bb($bg:$c1);
+      @at-root .dingw{
+        position: relative;
+      }
+    }
+    &-games3{
+      @include font($fc:$c5);
+    }
+    .triangle{
+      width: 0;
+      height: 0;
+      border-left: 12px solid $c3;
+      border-top: 15px solid transparent;
+      border-bottom: 15px solid transparent;
+      position: absolute;
+      right: -17px;
+      display: inline-block;
+    }
+
+  }
+  .main-3{
+    margin: $p1*1.5;
+    &-round{
+      height: $p1;
+      width: $p1;
+      border-radius: $p1;
+      @include bb($bg:$c2);
+      border: $b1;
+      display: inline-block;
+    }
+    &-round1{
+      @include bb($bg:$c1);
+    }
+  }
+}

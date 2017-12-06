@@ -1,0 +1,49 @@
+@import "base.scss";
+html{
+  @include bb($bg:$c1);
+}
+header{
+  padding: $p1;
+  @include flex();
+  @include font($fc:$c2);
+  img{
+    height: 25px;
+  }
+}
+main{
+  text-align: center;
+  .box {
+    @include bb($bg: #ffedc5);
+    @include font($fc: red);
+    height: 65vh;
+    margin: 30px 10%;
+    position: relative;
+    border: 8px solid $c2;
+    img {
+      height: 34vh;
+      padding-top: 13vh;
+    }
+    #box2{
+      display: none;
+    }
+    #round1 {
+      @include font($fc: $c3);
+      padding: 18px 25px;
+      @include bb($bg: $c2);
+      border-radius: 50%;
+      position: absolute;
+      top: -28px;
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+  button {
+    background: none;
+    border: none;
+    outline: none;
+    @include bb($bg: $c3);
+    @include font($fc: $c2);
+    padding: $p1*1.5 $p1;
+    width: 80%;
+  }
+}

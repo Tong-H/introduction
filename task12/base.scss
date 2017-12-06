@@ -1,0 +1,20 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  min-width: 320px;
+}
+$c1:#5fc0cd;  $c2:#fff;  $c3:#afbac0; $c4:#eff1f2;
+$f-s:1.6rem;
+$border:1px solid $c3;
+@mixin flex{
+  display: flex;
+  align-items: center;
+}
+@mixin icon{
+  background: url("img/icon.png");
+}

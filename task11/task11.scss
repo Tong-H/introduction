@@ -1,0 +1,69 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: #eff0f4;
+  font-size: 62.5%;
+}
+
+
+$background:#5fc0cd;
+$font-size:1.3rem;
+@mixin flex{
+  display: flex;
+  align-items: center;
+}
+@mixin font{
+  font-size: $font-size;
+  color: #ffffff;
+}
+
+
+
+header{
+  @include flex;
+  @include font;
+  justify-content: space-between;
+  background: $background;
+  height: 3.8rem;
+  padding: 0 1rem;
+}
+.main-1{
+  @include flex;
+  background: #ffffff;
+  padding: 8px 20px;
+  margin: 1rem 0; color: #e1e5e7;
+
+  input{
+    font-size: $font-size - 0.4rem;
+    color: #e1e5e7;
+    border: none;
+    border-left: 1px solid #e1e5e7;
+    margin-left: 1rem;
+    padding: 4px 10px;
+    width: 100%;
+    outline: none;
+  }
+  input::placeholder{
+    color: #e1e5e7;
+  }
+  img{
+    transform: scale(0.8);
+  }
+}
+.main-3{
+  @include flex;
+  @include font;
+  justify-content: center;
+  background: $background;
+  padding: 10px;
+  margin-top: 2rem;
+}
+.main-4{
+  @include flex;
+  justify-content: flex-end;
+  @include font;
+  color: $background;
+  padding:1rem;
+}

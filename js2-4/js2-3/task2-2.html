@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>发牌</title>
+    <link href="task2-2.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+    <img src="img/0000.png"/>
+</header>
+<main>
+    <div class="main-1">玩家配比</div>
+    <div class="main-2">
+        <div>
+
+            <img src="img/55352.jpg">水民
+            <p id="people1">9</p>人
+        </div>
+        <div>
+            <img src="img/55352.jpg">幽灵
+            <p id="people2">3</p>人
+        </div>
+    </div>
+
+    <form name="formname" class="main-3">
+        <span>请输入玩家数量</span>
+        <input type="number" id="numeber" value="12" oninput="deliver()"/>玩家数量为4-18
+    </form>
+</main>
+<footer  onclick="ip()" >发牌</footer>
+<script src="task2-2.js"></script>
+</body>
+</html>

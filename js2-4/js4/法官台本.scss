@@ -1,0 +1,91 @@
+@import "base.scss";
+header{
+  margin-bottom: 0;
+}
+main{
+  margin-bottom: 6.5rem;
+  .day{
+    &-1{
+      text-align: center;
+      @include font($fc:$c1);
+      @include bb($bg:$c2);
+      padding: $p1;
+      margin-top: $p1*2;
+    }
+    &-2{
+      width: 0;
+      height: 0;
+      margin: auto;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-bottom: 15px solid $c2;
+    }
+    &-3{
+      @include bb($bg:$c2);
+      padding: $p1;
+      .column{
+        @include flex($jc:center);
+        &-3{
+          img{
+            width: 4rem;
+            vertical-align: middle;
+            margin-right: 1rem;
+          }
+          div{
+            position: absolute;
+            height: 3.4rem;
+            width: 1.8px;
+            @include bb($bg:#d8d8d8);
+            left: 3rem;
+          }
+          .qq{
+            height: 5.3rem;
+          }
+        }
+        &-1{
+          width: 0;
+          height: 0;
+          border-top: 10px solid transparent;
+          border-bottom: 10px solid transparent;
+          border-right: 10px solid $c1;
+        }
+        &-2{
+          @include bb($bg:$c1);
+          @include font($fc:$c2);
+          flex: 1;
+          padding: $p1 0;
+          text-align: center;
+        }
+      }
+      p{
+        margin-left: 7rem;
+        padding: 1.5rem;
+        @include font($fs:1.5rem,$fc:$c1)
+      }
+    }
+  }
+}
+
+
+
+footer{
+  background-color:rgba(41,189,224,.5);
+  @include pf1($pw:calc(100% - 40px));
+  @include flex;
+  padding: $p1 $p1*2;
+  .footer-1,.footer-2{
+    width: 48%;
+    padding: $p1 0;
+    text-align: center;
+    border-radius: $p1;
+    outline: none;
+  }
+  .footer-1{
+    @include bb($bg:#f66f6f);
+    @include font($fc:$c2);
+  }
+  .footer-2{
+    @include bb($bg:$c3);
+    @include font($fc:$c2);
+  }
+}

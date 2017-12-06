@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none; }
+
+html {
+  font-size: 62.5%;
+  font-family: Microsoft YaHei; }
+
+body {
+  min-width: 320px; }
+
+button {
+  background: none;
+  border: none;
+  outline: none; }
+
+h2 {
+  text-align: center;
+  padding: 50px 0; }
+
+main {
+  background-color: #fafafa; }
+  main .lunbo {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 32vw; }
+    main .lunbo .lunbo1 {
+      width: 400%;
+      animation: lunbo1 20s infinite;
+      display: flex;
+      height: 100%; }
+      main .lunbo .lunbo1 div {
+        width: 25%; }
+        main .lunbo .lunbo1 div img {
+          width: 100%;
+          height: 100%; }
+@keyframes lunbo1 {
+  0% {
+    margin-left: 0; }
+  20% {
+    margin-left: 0; }
+  25% {
+    margin-left: -100%; }
+  45% {
+    margin-left: -100%; }
+  50% {
+    margin-left: -200%; }
+  70% {
+    margin-left: -200%; }
+  75% {
+    margin-left: -300%; }
+  80% {
+    margin-left: -300%; }
+  100% {
+    margin-left: 0; } }
+  main .wrap-padding {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 3%; }
+  main .main-1 {
+    align-items: flex-start;
+    padding-top: 50px; }
+    main .main-1-gx {
+      text-align: center;
+      width: 24.25%;
+      padding: 0 5px; }
+      main .main-1-gx2 {
+        font-size: 1.6rem;
+        color: #999; }
+    main .main-1-bd {
+      border-right: 1.2px dashed #999; }
+    main .main-1-zg {
+      font-size: 1.6rem;
+      color: #999;
+      padding: 30px 5px; }
+  main .main-2-learn {
+    width: 24.25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px; }
+    main .main-2-learn-fond {
+      font-size: 1.6rem;
+      color: #999;
+      padding: 0 5px;
+      display: inline-block; }
+  main .main-3-avatar {
+    width: 22%;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    position: relative; }
+  main .main-4 {
+    justify-content: center; }
+    main .main-4 img {
+      background-color: #fff;
+      width: 18%;
+      position: relative; }
+  main .main-3-avatar:hover {
+    box-shadow: 1px 1px 3px 3px #999;
+    z-index: 5; }
+  main .main-4 > img:hover {
+    box-shadow: 1px 1px 3px 3px #999;
+    z-index: 5; }
+  main .main-5 {
+    text-align: center;
+    background-color: #fff;
+    font-size: 1.6rem;
+    color: #999; }
+    main .main-5 ul {
+      list-style: inside;
+      display: inline-block;
+      padding: 5px; }
+
+@media (max-width: 1024px) {
+  main .main-2 {
+    padding-top: 0;
+    padding-bottom: 0; }
+  main .main-1, main .main-2, main .main-2, main .main-4 {
+    padding: 0 6%; }
+  main .main-1-gx, main .main-2-learn, main .main-3-avatar, main .main-4 > img {
+    width: 88%;
+    margin: 0 auto; }
+  main .main-3-avatar {
+    padding: 10px; }
+  main .main-1-zg {
+    text-align: center; }
+  main .main-1-bd {
+    border-right: none; }
+  main .main-4 > img {
+    display: block;
+    padding: 10px 0; }
+  main .wrap-padding {
+    display: block; } }
+
+/*# sourceMappingURL=task14-1.css.map */

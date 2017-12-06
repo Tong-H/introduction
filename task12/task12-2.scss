@@ -1,0 +1,148 @@
+@import "base.scss";
+
+header {
+  @include flex;
+  justify-content: space-between;
+  background: $c1;
+  padding: 13px;
+  color: $c2;
+  span {
+    @include icon;
+    width:21px;
+    height:22px;
+    background-position:-307px 0px;
+  }
+  .header-1,.header-2{
+    font-size: $f-s;
+    padding: 6px 12px;
+    border-radius: 7px;
+    position: relative;
+  }
+  .header-1 {
+    background: #55a8b3;
+    color: $c2;
+    left: 5px;
+    }
+  .header-2{
+    background: $c2;
+    color: $c1;
+    right: 5px;
+  }
+}
+form{
+  padding: 0 13px;
+  .form-1{
+    color: $c3;
+    width: calc(33.3% - 2px);
+    border: none;
+    outline: none;
+    margin: 8px 0;
+    padding: 2px 0;
+    padding-left: 15%;
+    }
+    .form-2{
+      border-right: 1px solid $c3;
+      border-left: 1px solid $c3;
+  }
+}
+.main-4{
+  border-bottom: $border;
+  margin-bottom: 6.7rem;
+}
+main{
+  @include flex;
+  justify-content: space-between;
+  color: $c3;
+  font-size: $f-s;
+  padding: 8px 15px;
+  border-top: $border;
+  .main-1{
+    flex: 1;
+    .main-3{
+      .main-3img1,.main-3img2{
+        @include icon;
+        display: inline-block;
+      }
+      .main-3img1{
+        width:10px;
+        height:12px;
+        background-position:-245px 0px;
+        margin-right: 4px;
+      }
+      .main-3img2{
+        width:12px;
+        height:12px;
+        background-position:-275px 0px;
+      }
+      p{
+        padding-left: 17px;
+        color: #000000;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 85%;
+      }
+    }
+  }
+  .main-2{
+    span{
+      font-size: $f-s;
+      color: red;
+      vertical-align: bottom;
+      padding-right: 5px;
+    }
+    div{
+      @include icon;
+      width:9px;
+      height:17px;
+      background-position:-63px 0px;
+      display: inline-block;
+    }
+  }
+}
+footer{
+  @include flex;
+  justify-content: space-between;
+  background: $c4;
+  position: fixed;
+  bottom: 0;
+  padding: 10px 40px;
+  width: calc(100% - 80px);
+
+  .footer-2,.footer-1>a,.footer-3>a{
+    @include icon;
+    display: inline-block;
+  }
+  .footer-1{
+    a{
+      width:24px;
+      height:21px;
+      background-position:-201px 0px;
+    }
+    p{
+      color: $c1;
+      padding-left: 2px;
+    }
+  }
+  .footer-2{
+    width:48px;
+    height:47px;
+    background-position:-92px 0px;
+  }
+  .footer-3{
+    a{
+      width:21px;
+      height:21px;
+      background-position:-160px 0px;
+    }
+    p{
+      color: $c3;
+    }
+  }
+}
+
+@media (max-width: 700px){
+  form .form-1{
+    padding-left: 11%;
+  }
+}

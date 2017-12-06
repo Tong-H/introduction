@@ -1,0 +1,108 @@
+@import "base.scss";
+header {
+  @include pf2;
+  .header-1 {
+    @include bb($bg: $c1);
+    @include flex;
+    padding: $p1;
+    .header-2 {
+      @include icon($iw: 20px, $ih: 20px, $ip: -28px 0px);
+    }
+    .header-3 {
+      @include font;
+    }
+    .header-4 {
+      @include icon;
+    }
+  }
+  .header-5{
+    @include bb($bg: #b9e9f5);
+    padding: $p1;
+    position: relative;
+    @include flex;
+    &-font{
+      @include font($fs:1.4rem,$fc:#000);
+      margin-top: 2px;
+    }
+    &-img{
+      @include icon($iw: 26px, $ih: 26px, $ip: -58px 0px);
+      display: inline-block;
+      vertical-align: middle;
+    }
+    audio{
+      position: absolute;
+      right: -264px;
+      opacity: 0;
+    }
+  }
+  .header-6{
+    width: 0;
+    height: 0;
+    border-top: $p1 solid #b9e9f5;
+    border-right: $p1 solid transparent;
+    border-left: $p1 solid transparent;
+    margin-left: $p1;
+  }
+}
+main {
+  @include bb($bg: $c1);
+  padding: 10rem $p1*2;
+  .main-1 {
+    @include font($fs: $p1*1.4);
+    margin-bottom: $p1;
+  }
+    .main-2 {
+      @include flex;
+      .main-3 {
+        width: 28%;
+        &:hover .main-3-hover{
+          opacity: 1;
+        }
+      .main-2-box {
+        height: 20vw;
+        text-align: center;
+        @include bb($bg: $c3);
+        border: 4px solid $c2;
+        font-size: $p1*1.4;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        p {
+          padding-top: 30%;
+        }
+        div {
+          @include bb($bg: #83b09a);
+          color: $c2;
+        }
+      }
+        @media (max-width: 320px) {
+          .main-2-box{
+            p{
+              padding-top: 24%;
+            }
+          }
+        }
+      &-hover {
+        @include flex;
+        margin: $p1*0.6 0;
+        opacity: 0;
+      img{
+        width: 14%;
+      }
+      }
+    }
+  }
+}
+footer{
+  @include bb($bg:$c1);
+  @include pf1;
+  text-align: center;
+  a{
+    display: block;
+    @include font;
+    background: $c3;
+    color: $c2;
+    margin: $p1*2;
+    padding: $p1*2 0;
+  }
+}

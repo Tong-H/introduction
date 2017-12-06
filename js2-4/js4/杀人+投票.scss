@@ -1,0 +1,99 @@
+@import "base.scss";
+html{
+  @include bb($bg:$c1);
+}
+header{
+  margin: 0;
+}
+  .header-1 {
+    @include bb($bg: $c1);
+    @include flex;
+    padding: $p1;
+  }
+  .header-5{
+    @include bb($bg: #b9e9f5);
+    padding: $p1;
+    position: relative;
+    @include flex;
+    &-font{
+      @include font($fs:1.4rem,$fc:#000);
+      margin-top: 2px;
+    }
+  }
+  .header-6{
+    width: 0;
+    height: 0;
+    border-top: $p1 solid #b9e9f5;
+    border-right: $p1 solid transparent;
+    border-left: $p1 solid transparent;
+    margin-left: $p1;
+  }
+
+
+main{
+  margin: $p1*2 $p1 auto;
+  .main-3 {
+    width: calc(33.33% - 20px);
+    margin: 0 $p1;
+    float: left;
+    &:hover .main-3-hover{
+      opacity: 1;
+    }
+    .main-2-box {
+      height: 20vw;
+      text-align: center;
+      @include bb($bg: $c3);
+      border: 4px solid $c2;
+      font-size: $p1*1.4;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      p {
+        padding-top: 20%;
+      }
+      div {
+        @include bb($bg: #83b09a);
+        color: $c2;
+      }
+    }
+    &-hover {
+      @include flex;
+      margin: $p1*0.6 0;
+      opacity: 0;
+      img{
+        width: 14%;
+      }
+    }
+  }
+}
+
+footer{
+  @include pf1;
+  text-align: center;
+  @include bb($bg:$c1);
+  button{
+    border: none;
+    display: inline-block;
+    @include font($fc:$c2);
+    background: $c3;
+    margin: $p1*2;
+    padding: $p1 0;
+    width: calc(100% - 40px);
+  }
+}
+@media (max-width: 320px) {
+  .main-2-box{
+    p{
+      padding-top: 25%;
+    }
+  }
+}
+@media (min-width: 768px) {
+  main{
+    width: 768px;
+    margin: auto;
+    .main-3 .main-2-box{
+      height: 10vw;
+    }
+  }
+}

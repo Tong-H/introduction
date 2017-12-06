@@ -1,0 +1,41 @@
+/* made by  雪碧图制作专家v1.0 */
+.icon
+{
+ display:block;
+ background:url(icon.png)  no-repeat;
+}
+.icon-7{
+ width:42px;
+ height:44px;
+ background-position:0px 0px;
+}
+.icon-1{
+ width:42px;
+ height:41px;
+ background-position:-43px 0px;
+}
+.icon-2{
+ width:94px;
+ height:94px;
+ background-position:-146px 0px;
+}
+.icon-3{
+ width:46px;
+ height:40px;
+ background-position:-97px 0px;
+}
+.icon-4{
+ width:9px;
+ height:16px;
+ background-position:-86px 0px;
+}
+.icon-5{
+ width:19px;
+ height:23px;
+ background-position:0px -45px;
+}
+.icon-6{
+ width:12px;
+ height:12px;
+ background-position:-43px -45px;
+}

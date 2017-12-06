@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  min-width: 320px; }
+
+body {
+  background: #f0f0f0; }
+
+header {
+  background: #29bde0;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+.bn{
+    border: none;
+    background: none;
+    outline: none;
+}
+main {
+  padding: 2rem;
+  padding-top: 5rem;
+  text-align: center; }
+  main .main-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+    background-color: #fff;
+    border: 1px solid #dbdbdb; }
+    main .main-1-font {
+      font-size: 1.7rem;
+      color: #9a9a9a; }
+    main .main-1-img {
+      background: url("img/1.png");
+      width: 12px;
+      height: 21px; }
+  main .main-2 {
+    background-color: #fff;
+    margin-top: 2rem;
+    border: 1px solid #dbdbdb; }
+    main .main-2 a {
+      display: block; }
+    main .main-2-games1 {
+      padding: 1.5rem;
+      font-size: 1.7rem;
+      color: #fbb435;
+      border-bottom: 1px solid #fbb435; }
+    main .main-2-games2 {
+      width: 85%;
+      padding: 2.5rem 0;
+      margin: 2rem auto;
+      font-size: 1.7rem;
+      color: #fff;
+      background-color: #29bde0; }
+      .dingw {
+        position: relative; }
+    main .main-2-games3 {
+      font-size: 1.7rem;
+      color: #9a9a9a; }
+    main .main-2 .triangle {
+      width: 0;
+      height: 0;
+      border-left: 12px solid #fbb435;
+      border-top: 15px solid transparent;
+      border-bottom: 15px solid transparent;
+      position: absolute;
+      right: -17px;
+      display: inline-block; }
+  main .main-3 {
+    margin: 1.5rem; }
+    main .main-3-round {
+      height: 1rem;
+      width: 1rem;
+      border-radius: 1rem;
+      background-color: #fff;
+      border: 1px solid #dbdbdb;
+      display: inline-block; }
+    main .main-3-round1 {
+      background-color: #29bde0; }
+
+/*# sourceMappingURL=task13-1.css.map */

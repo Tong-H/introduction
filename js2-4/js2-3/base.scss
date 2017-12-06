@@ -1,0 +1,48 @@
+$c1:#29bde0;
+$c2:#fff;
+$c3:#fbb435;
+$c4:#f0f0f0;
+$c5:#9a9a9a;
+$p1: 10px;
+$p2: 3%;
+$f1: 1.7rem;
+$b1:1px solid #dbdbdb;
+$b2:1px solid $c3;
+
+@mixin flex($ai:center,$jc:space-between){
+  display: flex;
+  align-items: $ai;
+  justify-content: $jc;
+}
+@mixin font($fs:$f1,$fc:$c5){
+  font-size:$fs;
+  color:$fc;
+}
+
+@mixin bb($bg:$c2){
+  background-color: $bg;
+}
+
+@mixin pf1($pw:100%){
+  position: fixed;
+  bottom: 0;
+  width: $pw;
+}
+
+@mixin pf2($pw:100%){
+  position: fixed;
+  top: 0;
+  width: $pw;
+}
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+html{
+  font-size: 62.5%;
+  @include bb($bg:$c4);
+}
+body{
+  min-width: 320px;
+}

@@ -1,0 +1,57 @@
+@import "base.scss";
+header{
+  padding: $p1;
+  @include bb($bg:$c1);
+}
+main{
+  padding: $p1;
+  .main-1,.main-2{
+    @include bb;
+    @include font;
+    padding: $p1;
+    text-align: center;
+  }
+  .main-2{
+    margin-top: $p1;
+    padding-bottom: 60vh;
+    div{
+      width: 50%;
+      display: inline-block;
+      float: right;
+    }
+    img{
+      width: 4rem;
+      vertical-align: middle;
+      border-radius: 50%;
+      margin-right: $p1;
+    }
+    p{
+      display: inline-block;
+    }
+  }
+  .main-3{
+    margin-top: $p1;
+    @include bb($bg:$c2);
+    padding: $p1;
+    text-align: center;
+    @include font($fs:$p1,$fc:$c5);
+    input{
+      border: none;
+      @include bb($bg:$c4);
+      width: $p1*3;
+      padding: $p1/4 $p1/2;
+      margin: 0 $p1/2;
+      text-align: center;
+    }
+    span{
+      @include font($fs:$p1*1.4,$fc:$c3);
+    }
+  }
+}
+footer{
+  background: $c3;
+  margin: $p1;
+  text-align: center;
+  @include font($fc:$c2);
+  padding: $p1;
+}

@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  min-width: 320px; }
+
+header {
+  background-color: #29bde0;
+  position: fixed;
+  top: 0;
+  width: calc(100% - 20px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem; }
+  header .header-1 {
+    background: url("img/icon.png");
+    width: 26px;
+    height: 22px;
+    background-position: -121px 0px; }
+  header .header-2 {
+    font-size: 1.7rem;
+    color: #fff; }
+  header .header-3 {
+    background: url("img/icon.png");
+    width: 21px;
+    height: 21px;
+    background-position: -157px 0px; }
+
+main {
+  margin-bottom: 8.3rem; }
+  main .main-1 {
+    padding: 6rem 1rem 1rem;
+    background-color: #29bde0; }
+    main .main-1-img {
+      background: url("img/icon.png");
+      width: 176px;
+      height: 103px;
+      background-position: 0px -44px;
+      margin: auto; }
+    main .main-1-font {
+      font-size: 1.7rem;
+      color: #fbb435;
+      text-align: center;
+      margin: 2rem 0; }
+    main .main-1 table {
+      font-size: 1.7rem;
+      color: #fff;
+      margin: auto;
+      width: 100%;
+      margin-left: 1rem; }
+  main .main-2 {
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    border-bottom: 1px solid #dbdbdb; }
+    main .main-2-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      main .main-2-row-font2 {
+        font-size: 1rem;
+        color: #9a9a9a; }
+
+footer {
+  background-color: rgba(41, 189, 224, 0.5);
+  position: fixed;
+  bottom: 0;
+  width: calc(100% - 40px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem; }
+  footer .footer-1, footer .footer-2 {
+    width: 48%;
+    padding: 2rem 0;
+    text-align: center;
+    border-radius: 1rem; }
+  footer .footer-1 {
+    background-color: #f66f6f;
+    font-size: 1.7rem;
+    color: #fff; }
+  footer .footer-2 {
+    background-color: #fbb435;
+    font-size: 1.7rem;
+    color: #fff; }
+
+/*# sourceMappingURL=task13-3.css.map */

@@ -1,0 +1,316 @@
+body{
+    min-width: 320px;
+}
+main{
+    margin: 3rem 6%;
+}
+.footer-1{
+    padding: 0 6%;
+}
+.checkbox label, .radio label{
+    padding: 0;
+}
+/*通用样式*/
+
+.header{
+    background: #1d7ad9;
+    color: #ffffff;
+    padding: 0 6%;
+}
+.header-1{
+    padding-top: 0.6rem;
+    white-space: nowrap;
+}
+.header-1-right{
+    background: #1d7ad9;
+    color: #ffffff;
+    border: none;
+    border-radius: 0;
+}
+
+.header-1-right.active,
+.header-1-right.active:hover,
+.header-1-right:hover{
+    background: #ffffff;
+    color: #000000;
+}
+
+/*登陆注册*/
+
+.header-2{
+    background: #f9f9f9;
+    padding: 3rem 6%;
+}
+.header-2 > .btn-default{
+    border: none;
+    margin: 0 1rem;
+}
+.header-2 > .btn-default:focus,
+.header-2 > .btn-default:hover{
+    border: none;
+    background: #1d7ad9;
+    color: #ffffff;
+    outline: none;
+}
+
+/*导航栏*/
+
+.main-1{
+    padding: 0 6%;
+}
+.mian-1-graphics{
+    width: 16rem;
+    height: 0.5rem;
+    background: #ccc;
+    position: relative;
+    float: right;
+    margin: 3rem 0;
+}
+.mian-1-graphics span{
+    padding: 0.2rem 0.7rem;
+    background: #ccc;
+    border-radius: 100%;
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    left: 40%;
+    bottom:-250%;
+}
+.mian-1-graphics p{
+    position: absolute;
+    top: 500%;
+    left: 24%;
+    color: #ccc;
+}
+.mian-1-graphics:hover span,
+.mian-1-graphics:hover{
+    background: #ff5c00;
+}
+.mian-1-graphics:hover p{
+    color: #ff5c00;
+}
+
+/*定制纸箱1234*/
+
+.main-2 span{
+    height: 2rem;
+    width: 0.2rem;
+    background: #1d7ad9;
+    display: inline-block;
+    float: left;
+}
+.main-2 p{
+    float: left;
+    margin-left: 1rem;
+}
+
+/*分界线*/
+
+.main-3{
+    background: #f2f2f2;
+    padding: 1rem;
+    color: #1d7ad9;
+    line-height: 0;
+}
+.main-3 img{
+    margin-right: 1rem;
+    vertical-align: text-bottom;
+}
+
+/*分界线*/
+.main-4{
+    background: #fbfcff;
+    border: 0.1rem solid #e7e7e7;
+}
+.main-4-radio input[type=radio]{
+    opacity:0;
+    position: absolute;
+}
+.main-4-radio input[type=radio] + span{
+    display: inline-block;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    border: 1px  solid #999;
+    vertical-align: sub;
+    margin-right: 1rem;
+}
+.main-4-radio input[type=radio]:checked + span{
+    display: inline-block;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    border: 5px  solid #1d7ad9;
+    vertical-align: sub;
+    margin-right: 1rem;
+}
+label{
+    margin-right: 10px;
+}
+.main-4-radio2{
+    margin-top: 1rem;
+}
+.bian label{
+    margin: 0 1rem 1rem;
+    white-space: nowrap;
+}
+.radio1{
+    padding-top:7px;
+}
+.radio3 label{
+    padding-bottom:7px;
+}
+/*单选框*/
+.main-4-btn .btn{
+    background: #ffffff;
+    border: 0.1rem solid #9d9d9d;
+    color: #9d9d9d;
+    font-size: 1.3rem;
+    margin-top: 3px;
+}
+.glyphicon-triangle-bottom{
+    background: #1d7ad9;
+    color: #ffffff;
+    padding: 0.2rem 0.4rem;
+    transform: scale(0.7);
+    vertical-align: top;
+}
+.dropdown-menu{
+    min-width: 120px;
+}
+.main-4-btn1{
+    margin-top: 2.9rem;
+}
+.main-end{
+    border: 0.1rem solid #e7e7e7;
+    border-top: none;
+}
+.main-end .btn{
+    margin: 4rem 0;
+}
+/*查看详情*/
+.form-control{
+    display: inline-block;
+    width: 15%;
+    border-radius: 0;
+    margin: 0 0.5rem;
+}
+.main-4-radio div{
+    display: initial;
+}
+/*文本框*/
+.footer-1{
+    color: #999;
+    background: #f9f9f9;
+}
+.footer-2{
+    margin-top: 1rem;
+    white-space: nowrap;
+}
+.footer-3 a{
+    margin-top: 1rem;
+    white-space: nowrap;
+}
+.footer-3 div{
+    margin: 1rem 0;
+}
+.footer-4{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    white-space: nowrap;
+}
+.footer-4 img{
+    transform: scale(0.8);
+}
+.footer-5{
+    white-space: nowrap;
+    font-size: 1rem;
+    color: #ffffff;
+    background: #1d7ad9;
+    padding: 0.5rem 0;
+}
+.footer-6{
+    text-align: right;
+}
+.footer-7{
+    text-align: left;
+}
+/*底部*/
+
+@media (max-width: 430px) {
+
+    .header-2{
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+    .header-2 > .btn-default {
+        margin: 0;
+    }
+    .header{
+        padding: 0;
+    }
+}
+@media (max-width: 723px) {
+    .mian-1-graphics{
+        width: calc(25% - 0.1px);
+    }
+    .mian-1-graphics span{
+        position: absolute;
+        left: 36%;
+    }
+    .main-1{
+        padding: 0 1rem;
+    }
+}
+@media (max-width: 654px) {
+    .mian-1-graphics p{
+        font-size: 1rem;
+        position: absolute;
+        top: 500%;
+        left: 25%;
+    }
+}
+@media (max-width: 321px) {
+    .mian-1-graphics p{
+        font-size: 1rem;
+        position: absolute;
+        top: 500%;
+        left: 20%;
+    }
+}
+@media (max-width: 390px) {
+    .dropdown-menu.pull-right{
+        left: 0;
+    }
+    label{
+        margin-right: 0;
+    }
+}
+@media (max-width: 993px) {
+    .main-4-radio>div{
+        display: block;
+        margin: 1rem 0;
+    }
+    .form-control{
+        width: 50%;
+    }
+}
+@media (max-width: 765px) {
+    .footer-1{
+        text-align: center;
+    }
+    .footer-4{
+        justify-content: center;
+        margin-top: -1.5rem;
+    }
+    .footer-5,.footer-7,.footer-6{
+        text-align: center;
+    }
+}
+@media (max-width: 1405px) {
+    label{
+        display: block;
+    }
+}
+/*媒体查询*/

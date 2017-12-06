@@ -1,0 +1,50 @@
+@import "base.scss";
+footer{
+  @include b();
+  padding: $p2 $p1*2;
+  @include font($fs:1.4rem);
+  .footer-1{
+    @include flex;
+    align-items: flex-start;
+    &-left{
+      p{
+        padding-bottom: $p2*3;
+      }
+    }
+    &-center{
+      &-1{
+        padding-bottom: $p2;
+        display: block;
+      }
+      a{
+        color: $c2;
+      }
+    }
+    &-right{
+      text-align: center;
+      img{
+        width: 80%;
+      }
+    }
+  }
+  .footer-2{
+    text-align: center;
+    padding-top: $p2;
+    @include font($fs:1.2rem);
+
+  }
+  @media (max-width: 768px){
+    .footer-1{
+      display: block;
+      text-align: center;
+      &-left{
+        p{
+          padding-bottom: $p2;
+        }
+      }
+      &-right>img{
+        width: 25%;
+      }
+    }
+  }
+}

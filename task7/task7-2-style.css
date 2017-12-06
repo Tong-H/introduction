@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    background: #29bde0;
+}
+body{
+    min-width: 250px;
+}
+.icon{
+    background:url(img/icon.png)  no-repeat;
+    transform: scale(0.55);
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color:#fff;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0 ;
+    background: #29bde0;
+}
+.header-1{
+    height: 4rem;
+    justify-content: space-between;
+}
+.header-2{
+    width:39px;
+    height:40px;
+    background-position:-28px -12px;
+}
+.header-3{
+    font-size: 1.8rem;
+    color: #fff;
+}
+.header-4{
+    width:36px;
+    height:36px;
+    background-position:-259px -222px;
+}
+.header-5{
+    justify-content: space-between;
+    background: #b9e9f5;
+    height: 4rem;
+    padding-left:2.4rem;
+}
+.header-5-left{
+    font-size: 1.3rem;
+    color: #000;
+}
+.header-5-right{
+    width:52px;
+    height:52px;
+    background-position:-71px -93px;
+}
+audio{
+    opacity: 0;
+    position: absolute;
+    right: -26rem;
+}
+
+.header-6{
+    width: 0;
+    height: 0;
+    border-top: 0.8rem solid #b9e9f5;
+    border-right: 0.4rem solid transparent;
+    border-left: 0.4rem solid transparent;
+    margin-left: 3.4rem;
+}
+.header-7{
+    color: #fff;
+    margin: 0.5rem 3.4rem;
+}
+
+main{
+    margin: 10rem 0;
+}
+.main-1{
+    justify-content: space-between;
+    padding: 1rem 2rem 0;
+}
+.main-1 a{
+    width: 28%;
+    height: 100%;
+}
+.main-2{
+    border: 0.4rem solid #fff;
+    background: #f5c97b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-2 p{
+    font-size: 1.7rem;
+    margin: 30% 0;
+}
+.main-2 div{
+    font-size: 1.7rem;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background: #83b09a;
+}
+.main-3{
+    visibility: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+.main-3 img{
+    width: 20%;
+    height: 20%;
+}
+a:hover .main-3{
+    visibility: visible;
+}
+footer{
+    background: #29bde0;
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 6rem);
+    text-align: center;
+    padding: 3rem;
+
+}
+footer div{
+    background: #fbb435;
+    padding: 1.5rem 0;
+    font-size: 2rem;
+    color: #fff;
+}

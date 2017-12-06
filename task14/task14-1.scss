@@ -1,0 +1,158 @@
+@import "base.scss";
+h2{
+  text-align: center;
+  padding: $p2*5 0;
+}
+main{
+  @include b($bg:$c2);
+  .lunbo{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height:32vw;
+    .lunbo1{
+      width: 400%;
+      animation: lunbo1 20s infinite;
+      display: flex;
+      height: 100%;
+      div{
+        width: 25%;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+  @keyframes lunbo1 {
+    0%{
+      margin-left: 0;
+    }
+    20%{
+      margin-left: 0;
+    }
+    25%{
+      margin-left: -100%;
+    }
+    45%{
+      margin-left: -100%;
+    }
+    50%{
+      margin-left: -200%;
+    }
+    70%{
+      margin-left: -200%;
+    }
+    75%{
+      margin-left: -300%;
+    }
+    80%{
+      margin-left: -300%;
+    }
+    100%{
+      margin-left: 0;
+    }
+  }
+  .wrap-padding{
+    @include flex;
+    padding: $p2 $p1;
+  }
+  .main-1{
+    align-items: flex-start;
+    padding-top: $p2*5;
+    &-gx{
+      text-align: center;
+      width: 24.25%;
+      padding: 0 $p2/2;
+      &2{
+        @include font($fs:$f1,$fc:$c3);
+      }
+    }
+    &-bd{
+      border-right: 1.2px dashed $c3;
+    }
+    &-zg{
+      @include font($fs:$f1,$fc:$c3);
+      padding: $p2*3 $p2/2;
+
+    }
+  }
+  .main-2{
+    &-learn{
+      width: 24.25%;
+      @include flex();
+      padding: $p2/2;
+      &-fond{
+        @include font($fc:$c3);
+        padding: 0 $p2/2;
+        display: inline-block;
+      }
+    }
+  }
+  .main-3{
+    &-avatar{
+      width: 22%;
+      text-align: center;
+      @include b($bg:$c4);
+      padding: $p2;
+      position: relative;
+    }
+  }
+  .main-4{
+    justify-content: center;
+    img{
+      @include b($bg:$c4);
+      width: 18%;
+      position: relative;
+    }
+  }
+  .main-3-avatar:hover{
+    box-shadow: 1px 1px 3px 3px $c3;
+    z-index: 5;
+  }
+  .main-4>img:hover{
+    box-shadow: 1px 1px 3px 3px $c3;
+    z-index: 5;
+  }
+  .main-5{
+    text-align: center;
+    @include b($bg:$c4);
+    @include font($fc:$c3);
+    ul{
+      list-style: inside;
+      display: inline-block;
+      padding: $p2/2;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  main{
+    .main-2{
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    .main-1,.main-2,.main-2,.main-4{
+      padding: 0 $p1*2;
+    }
+    .main-1-gx,.main-2-learn,.main-3-avatar,.main-4>img{
+      width: 88%;
+      margin: 0 auto;
+    }
+    .main-3-avatar{
+      padding: $p2;
+    }
+    .main-1-zg{
+      text-align: center;
+    }
+    .main-1-bd{
+      border-right: none;
+    }
+    .main-4>img{
+      display: block;
+      padding: $p2 0;
+    }
+    .wrap-padding{
+      display: block;
+    }
+  }
+}

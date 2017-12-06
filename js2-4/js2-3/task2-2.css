@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none; }
+
+html {
+  font-size: 62.5%;
+  background-color: #f0f0f0; }
+
+body {
+  min-width: 320px; }
+
+header {
+  padding: 10px;
+  background-color: #29bde0; }
+
+main {
+  padding: 10px; }
+  main .main-1, main .main-2 {
+    background-color: #fff;
+    font-size: 1.7rem;
+    color: #9a9a9a;
+    padding: 10px;
+    text-align: center; }
+  main .main-2 {
+    margin-top: 10px;
+    padding-bottom: 60vh; }
+    main .main-2 div {
+      width: 50%;
+      display: inline-block;
+      float: right; }
+    main .main-2 img {
+      width: 4rem;
+      vertical-align: middle;
+      border-radius: 50%;
+      margin-right: 10px; }
+    main .main-2 p {
+      display: inline-block; }
+  main .main-3 {
+    margin-top: 10px;
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 10px;
+    color: #9a9a9a; }
+    main .main-3 input {
+      border: none;
+      background-color: #f0f0f0;
+      width: 30px;
+      padding: 2.5px 5px;
+      margin: 0 5px;
+      text-align: center; }
+    main .main-3 span {
+      font-size: 14px;
+      color: #fbb435; }
+
+footer {
+  background: #fbb435;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.7rem;
+  color: #fff;
+  padding: 10px; }
+
+/*# sourceMappingURL=task2-2.css.map */

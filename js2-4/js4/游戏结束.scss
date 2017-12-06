@@ -1,0 +1,67 @@
+@import "base.scss";
+html{
+  @include bb($bg:$c2);
+}
+header{
+  margin-bottom: 0;
+}
+main{
+  margin-bottom: $p1*8.3;
+  .main-1{
+    padding: $p1*4 $p1 $p1;
+    @include bb($bg:$c1);
+    &-img{
+      background: url("img/5.png") no-repeat;
+      width: 351px;
+      height: 205px;
+      margin: auto;
+    }
+    &-font{
+      @include font($fc:$c3);
+      text-align: center;
+      margin: $p1*2 0 ;
+    }
+    table{
+      @include font($fc:$c2);
+      margin: auto;
+      text-align: center;
+      width: 100%;
+      margin-left: $p1;
+    }
+  }
+  .main-2{
+    padding: $p1 $p1*3 ;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    border-bottom: $b3;
+    &-row{
+      @include flex;
+      &-font1{
+      }
+      &-font2{
+        @include font($fs:$p1,$fc:$c5);
+      }
+    }
+  }
+}
+footer{
+  background-color:rgba(41,189,224,.5);
+  @include pf1($pw:calc(100% - 40px));
+  @include flex;
+  padding: $p1 $p1*2;
+  .footer-1,.footer-2{
+    width: 48%;
+    padding: $p1 0;
+    text-align: center;
+    border-radius: $p1;
+
+  }
+  .footer-1{
+    @include bb($bg:#f66f6f);
+    @include font($fc:$c2);
+  }
+  .footer-2{
+    @include bb($bg:$c3);
+    @include font($fc:$c2);
+  }
+}

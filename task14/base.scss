@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+html{
+  font-size: 62.5%;
+  font-family: Microsoft YaHei;
+}
+body{
+  min-width: 320px;
+}
+button{
+  background: none;
+  border: none;
+  outline: none;
+}
+$c1:#26a26f;
+$c2:#fafafa;
+$c3:#999;
+$c4:#fff;
+$c5:#ff650e;
+$p1: 3%;
+$p2: 10px;
+$f1:1.6rem;
+$f2:1.8rem;
+$bd:1px solid $c3;
+
+@mixin flex($ai:center,$jc:space-between){
+  display: flex;
+  align-items: $ai;
+  justify-content: $jc;
+}
+
+@mixin font($fs:$f1,$fc:$c2){
+  font-size:$fs;
+  color:$fc;
+}
+
+@mixin b($bg:$c1){
+  background-color: $bg;
+}

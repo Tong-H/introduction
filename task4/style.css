@@ -1,0 +1,25 @@
+*{margin: 0;}
+html{background: #eff0f4;font-size: 62.5%;}
+.font{font-size: 1.7rem;
+    color: #ffffff;}
+.flex{display:flex;
+    align-items: center;}
+.height{ height: 5rem;}
+
+.header{justify-content:space-between;
+    background: #5fc0cd;}
+.left{margin: 0 0 0 1.5rem;}
+.right{margin: 0 1.5rem 0 0;}
+.box{align-items:center;
+    background: #ffffff;
+    margin: 0.9rem 0 0.9rem 0;}
+.img1{margin: 0 1.2rem 0 1.2rem;
+    padding: 0.2rem 1.2rem 0.2rem 0;
+    border-right: 0.12rem solid #bababa;}
+.number{border:0;font-size: 1.5rem;color: #bababa;outline:none;}
+.password{border:0;font-size: 1.5rem;color: #bababa;outline:none;}
+.landing{justify-content:center;
+    background: #5fc0cd;
+    margin: 3.5rem 0 1rem 0;}
+.end{color: #5fc0cd;
+    float: right;}

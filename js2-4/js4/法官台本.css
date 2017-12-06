@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none; }
+
+html {
+  font-size: 62.5%;
+  background-color: #f0f0f0; }
+
+body {
+  min-width: 320px; }
+
+header {
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 1.7rem;
+  color: #fff;
+  text-align: center;
+  border-bottom: 1px solid white;
+  background-color: #29bde0; }
+
+header {
+  margin-bottom: 0; }
+
+main {
+  margin-bottom: 6.5rem; }
+  main .day-1 {
+    text-align: center;
+    font-size: 1.7rem;
+    color: #29bde0;
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 20px; }
+  main .day-2 {
+    width: 0;
+    height: 0;
+    margin: auto;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #fff; }
+  main .day-3 {
+    background-color: #fff;
+    padding: 10px; }
+    main .day-3 .column {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      main .day-3 .column-3 img {
+        width: 4rem;
+        vertical-align: middle;
+        margin-right: 1rem; }
+      main .day-3 .column-3 div {
+        position: absolute;
+        height: 3.4rem;
+        width: 1.8px;
+        background-color: #d8d8d8;
+        left: 3rem; }
+      main .day-3 .column-3 .qq {
+        height: 5.3rem; }
+      main .day-3 .column-1 {
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-right: 10px solid #29bde0; }
+      main .day-3 .column-2 {
+        background-color: #29bde0;
+        font-size: 1.7rem;
+        color: #fff;
+        flex: 1;
+        padding: 10px 0;
+        text-align: center; }
+    main .day-3 p {
+      margin-left: 7rem;
+      padding: 1.5rem;
+      font-size: 1.5rem;
+      color: #29bde0; }
+
+footer {
+  background-color: rgba(41, 189, 224, 0.5);
+  position: fixed;
+  bottom: 0;
+  width: calc(100% - 40px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px; }
+  footer .footer-1, footer .footer-2 {
+    width: 48%;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 10px;
+    outline: none; }
+  footer .footer-1 {
+    background-color: #f66f6f;
+    font-size: 1.7rem;
+    color: #fff; }
+  footer .footer-2 {
+    background-color: #fbb435;
+    font-size: 1.7rem;
+    color: #fff; }
+
+/*# sourceMappingURL=%B7%A8%B9%D9%CC%A8%B1%BE.css.map */
